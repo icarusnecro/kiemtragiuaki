@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let array1 =[3, 6, 8, 10, 12, 14, 25];
+let num = parseInt(prompt("nhap vi tri phan tu duoc chon cuoi cung:"));
+let array2 =[];
+function listPrimes(num) {
+    if(num<= array1.length){
+        for(let i=parseInt(prompt("nhap phan tu duoc chon tu vi tri:"));i<=num;i++){
+            array2 = array2 +array1[i];
+
+        }
+    }document.write(array2);
+}
+listPrimes(num);
+</script>
+</body>
+</html>

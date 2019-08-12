@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let  inputArray=[[1, 2 ],
+                 [3, 4 ]];
+function creatArray(array) {
+    let arrayClone = [];
+    for (let i = 0; i < array.length;i++){
+        if (i % 2 !== 0) {
+            array[i].reverse();
+        }
+        for (let j = 0; j < array[i].length; j++) {
+            arrayClone.push(array[i][j]);
+        }
+    }
+    return arrayClone;
+}
+document.write(creatArray(inputArray));
+
+
+</script>
+</body>
+</html>

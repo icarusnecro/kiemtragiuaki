@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let so = parseInt(prompt("nhap so de kiem tra so day co phai so nguyen to khong"));
+    function isPrime(so) {
+
+        for(let i = 2;i<=Math.sqrt(so);i++ ) {
+            if (so % i === 0 && so > 2) {
+                return false;
+            }
+        }return true;
+    }
+    if(isPrime(so)===true){
+        document.write(so +"true");
+    }else{
+        document.write(so +"false");
+    }
+
+</script>
+</body>
+</html>

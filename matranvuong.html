@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let array1 = [[2,4],[5,5]];
+    let array2 = [[3,5,7],
+                  [4,2,1],
+                  [1,0,7]];
+    function sumDiagonal(array){
+        let num = 0;
+        for(let i=0;i<array.length;i++){
+            for(let j=0;j<array[i].length;j++){
+                if(i===j) {
+                    num += array[i][j];
+                    console.log(num);
+                }
+            }
+        }
+        return num;
+
+    }
+    document.write(sumDiagonal(array2)+"<br/>");
+    document.write(sumDiagonal(array1));
+</script>
+</body>
+</html>
